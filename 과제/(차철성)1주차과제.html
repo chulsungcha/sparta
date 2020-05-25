@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>차철성1주차과제</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+
+        .myproduct {
+            color: white;
+            width: 500px;
+            height: 300px;
+            background-image: url(https://cdn.pixabay.com/photo/2017/01/23/15/13/engine-2002849_960_720.jpg);
+            background-position: center;
+            background-size: cover;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+
+        .wrap {
+            margin: 10px auto auto auto;
+            width: 500px;
+
+        }
+
+        .price {
+            font-size: 15px;
+        }
+
+    </style>
+    <script>
+        function hi() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+</head>
+
+<body>
+    <div class='wrap'>
+        <img class="myproduct">
+        <h3>Harley Patboy <span class='price'>가격: 30,000$/개</span></h3>
+        <P>따뜻한 봄바람 부는 요즘 새로운 할리를 타고 바닷가 시원함을 만끼해 보세요...<br>가슴이 뛰는 즐거움을 느끼실 수 있습니다</P>
+        <h3>주문하기</h3>
+        <div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">주문자 성함</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">수&nbsp; &nbsp; &nbsp; &nbsp;량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>--수량을 선택하세요--</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">주&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">전&nbsp;화&nbsp;번&nbsp;호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <p>
+                <center><a onclick="hi()" class="btn btn-primary btn-lg" href="#" role="button">주문하기</a></center>
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
