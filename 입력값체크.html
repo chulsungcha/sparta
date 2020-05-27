@@ -20,11 +20,12 @@
             // 2. 만약 입력값이 빈칸이면 if(입력값=='')
             // 3. alert('입력하세요!') 띄우기
             // 4. alert(입력값) 띄우기
-            let text1 = $('#input-q1').val();
-            if (text1 == ''){
-                alert('입력하세요!!!!!')
+            let txt = $('#input-q1').val();
+
+            if (txt == '') {
+                alert('입력하세요!')
             } else {
-                alert(text1)
+                alert(txt)
             }
         }
 
@@ -34,15 +35,14 @@
             // 3. info.spartacoding@gmail.com -> gmail 만 추출해서
             // 4. alert(도메인 값);으로 띄우기
             // 5. 만약 이메일이 아니면 '이메일이 아닙니다.' 라는 얼럿 띄우기
-            let text2 = $('#input-q2').val();
-            if (text2 == ''){
-                alert('이메일을 입력하세요!!!!!')
+            let myemail = $('#input-q2').val();
+
+            if (myemail == '') {
+                alert('이메일을 입력하세요!')
+            } else if (myemail.indexOf('@') != -1) {
+                alert(myemail.split('@')[1].split('.')[0])
             } else {
-                if (text2.indexOf('@') != -1){
-                    alert(text2.split('@')[1].split('.')[0])
-                } else {
-                    alert('이메일이 아닙니다')
-                }
+                alert('이메일을 확인하세요')
             }
         }
 
@@ -50,8 +50,8 @@
             // 1. input-q3 값을 가져온다.
             // 2. 가져온 값을 이용해 names-q3에 붙일 태그를 만든다. (let temp_html = '<li>임꺽정</li>')
             // 3. 만들어둔 temp_html을 names-q3에 붙인다.(jQuery의 $('...').append(temp_html)을 이용하면 굿!)
-            let text3 = $('#input-q3').val();
-            let temp_html = '<li>'+text3+'</li>';   
+            let name = $('#input-q3').val();
+            let temp_html = '<li>'+name+'</li>';
             $('#names-q3').append(temp_html);
         }
 
@@ -97,4 +97,3 @@
 </body>
 
 </html>
-```

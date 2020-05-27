@@ -17,25 +17,23 @@
         function q1() {
 
             let num = $('#magicnum').val();
-            let url_to = "http://numbersapi.com/" + num;
+            let to_url = 'http://numbersapi.com/' + num;
             $.ajax({
                 type: "GET",
-                url: url_to,
+                url: to_url,
                 data: {},
                 success: function (response) {
                     $('#meaning').text(response)
-                    console.log(response)
-                    
                 }
             })
-
         }
+
     </script>
 
 </head>
 
 <body>
-    <h1>JQuery+Ajax의 조합을 연습하자!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+    <h1>JQuery+Ajax의 조합을 연습하자!</h1>
 
     <hr />
 
